@@ -1,0 +1,25 @@
+h1, h2, h3 {
+	text-decoration: underline;
+	color: #A9A9A9;
+}
+
+html {
+	font-family: "sans-serif", "Verdana", "commic Sans";
+	background-color: transparent;
+}
+
+
+html{
+
+	
+	content: " ";
+  	background-image: url(/img/Civil.jpg);
+  	opacity: 0.90;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: -1;   
+
+}

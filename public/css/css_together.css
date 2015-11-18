@@ -1,0 +1,23 @@
+h1{
+    	font-weight:normal;
+    	
+    }
+
+    article h1{
+    	color: red;
+    }
+
+    h1, .abstract, #article-sub{
+    	/*transform: rotate(180deg);*/
+
+    }
+
+    
+
+
+    #article-sub{
+    	background-color: pink;
+    	
+    
+    
+    }
