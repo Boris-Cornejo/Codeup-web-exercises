@@ -6,7 +6,7 @@ h2 {
 
 .boundaries {
 	height: 500px;
-	width: 450px;
+	width: 400px;
 	border: 1px;
 	margin: 0 auto;
 }
@@ -21,6 +21,8 @@ h2 {
 	border: 1px solid black;
 	margin: 50px 25px 25px 0px;
 	padding: 5px;
+	box-sizing: border-box;
+
 
 
 	
@@ -40,7 +42,7 @@ h2 {
 	margin: 50px 25px 25px 25px;
 	padding: 5px;
 	float: left;
-	box-sizing: content-box;
+	box-sizing: border-box;
 
 
 }
@@ -55,6 +57,7 @@ h2 {
 	margin: 50px 25px 25px 25px;
 	padding: 5px;
 	float: left;
+	box-sizing: border-box;
 	
 
 }
@@ -69,6 +72,7 @@ h2 {
 	margin: 25px 25px 25px 0px;
 	padding: 5px;
 	float: left;
+	box-sizing: border-box;
 
 	
 
@@ -84,6 +88,7 @@ h2 {
 	margin: 25px 25px 25px 25px;
 	padding: 5px;
 	float: left;
+	box-sizing: border-box;
 	
 
 	
@@ -98,6 +103,7 @@ h2 {
 	margin: 25px 25px 25px 25px;
 	padding: 5px;
 	float: left;
+	box-sizing: border-box;
 
 
 
@@ -107,7 +113,7 @@ h2 {
 
 img {
 	position: relative;
-	left: 60px;
-	bottom: 75;
+	left: 45px;
+	bottom: 80;
 
 }
