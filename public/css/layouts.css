@@ -1,0 +1,112 @@
+.nav{
+    background: black;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.fake-links{
+
+    position: relative;
+    text-align: center;
+    width: 600px;
+    margin: 25px auto;
+
+}
+.fake-item{
+    display: inline;
+    padding: 50px;
+}
+.nav-link{
+    color: gold;
+    text-decoration: none;
+}
+
+aside{
+    background: black;
+    position: absolute;
+    height: 2000px;
+    width: 10%;
+    left: 0;
+        
+}
+
+
+
+.side-links{
+    background: white;
+    position: relative;
+    margin-top: 350px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+    left: 50px;
+
+
+
+}
+/*.side-items{
+    color: black;
+    
+
+}*/
+.side-link{
+    text-decoration: none;
+    color: gold;
+    text-align: center; 
+    
+
+
+
+}
+
+footer{
+    background: black;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+
+
+}
+.footer{
+    text-align: center;
+    color: gold;
+}
+.foot-link{
+    display: inline;
+    padding: 50px;
+
+
+}
+.rights{
+    text-align: left; 
+    color: white;
+}
+    
+.footer-link{
+    color: gold;
+}
+.content{
+    width: 75%;
+    float: right;
+    padding: 20px;
+    position: relative;
+    top: 125px;
+    font-size: 30px;
+
+
+}
+.death-star{
+    float: left;
+    margin: 25px;
+    padding: 25px;
+
+}
+
+
