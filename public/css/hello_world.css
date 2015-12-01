@@ -6,6 +6,8 @@ h1, h2, h3 {
 html {
 	font-family: "sans-serif", "Verdana", "commic Sans";
 	background-color: transparent;
+  margin-left: 50px;
+  
 }
 
 
@@ -15,7 +17,7 @@ html::after {
 	
 	content: " ";
   	background-image: url(/img/Civil.jpg);
-  	opacity: 0.90;
+  	opacity: 0.50;
   	top: 0;
   	left: 0;
   	bottom: 0;

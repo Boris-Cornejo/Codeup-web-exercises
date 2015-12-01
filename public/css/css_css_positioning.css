@@ -6,30 +6,22 @@ h2 {
 
 .boundaries {
 	height: 500px;
-	width: 400px;
+	width: 300px;
 	border: 1px;
 	margin: 0 auto;
 }
 .one{
-	float: left;
 	background-color: #D84231;
 	color: white;
 	font-weight: bold;
-	text-indent: 5px;
 	width: 72px;
 	height: 72px;
 	border: 1px solid black;
 	margin: 50px 25px 25px 0px;
 	padding: 5px;
+	float: left;
 	box-sizing: border-box;
-
-
-
 	
-	
-	
-	
-
 }
 
 .two {
@@ -43,9 +35,8 @@ h2 {
 	padding: 5px;
 	float: left;
 	box-sizing: border-box;
-
-
 }
+
 
 .three {
 	background-color: #FCF732;
@@ -54,13 +45,12 @@ h2 {
 	width: 72px;
 	height: 72px;
 	border: 1px solid black;
-	margin: 50px 25px 25px 25px;
+	margin: 25px 50px 25px 0px;
 	padding: 5px;
 	float: left;
 	box-sizing: border-box;
-	
-
 }
+
 
 .four {
 	background-color: #578C05;
@@ -72,12 +62,9 @@ h2 {
 	margin: 25px 25px 25px 0px;
 	padding: 5px;
 	float: left;
-	box-sizing: border-box;
-
-	
-
-	
+	box-sizing: border-box;	
 }
+
 .five{
 	background-color: #234AFB;
 	color: white;
@@ -85,14 +72,12 @@ h2 {
 	width: 72px;
 	height: 72px;
 	border: 1px solid black;
-	margin: 25px 25px 25px 25px;
+	margin: 25px 25px 25px 0px;
 	padding: 5px;
 	float: left;
 	box-sizing: border-box;
-	
-
-	
 }
+
 .six {
 	background-color: #DF8BF0;	
 	color: white;
@@ -103,13 +88,9 @@ h2 {
 	margin: 25px 25px 25px 25px;
 	padding: 5px;
 	float: left;
-	box-sizing: border-box;
-
-
-
-	
-	
+	box-sizing: border-box;	
 }
+
 
 img {
 	position: relative;
