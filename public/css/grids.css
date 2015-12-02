@@ -23,25 +23,30 @@
 .column.one-half {
 	background: gold;
     width: 50%;
+    border: solid white;
 }
 .column.one-third {
 	background: red;
     width: 33.33%;
+    border: solid white;
 }
 
 
 .column.one-fourth{
 	background: salmon;
 	width: 25%;
+	border: solid white;
 }
 
 .column.one-sixth{
 	background: grey;
-	width: 16.66%
+	width: 16.66%;
+	border: solid white;
 }
 .column.one-eighth{
 	background: teal;
 	width: 12.5%;
+	border: solid white;
 }
 
 
