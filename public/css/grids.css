@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 }
 .container {
+	background: #36472A;
     margin: 0 auto;
     width: 100%;
     max-width: 2000px;
@@ -24,11 +25,15 @@
 	background: gold;
     width: 50%;
     border: solid white;
+    height: 125px;
+    transform: rotate(-5deg);
 }
 .column.one-third {
 	background: red;
     width: 33.33%;
     border: solid white;
+    height: 80px;
+    transform: rotate(-5deg);
 }
 
 
@@ -36,18 +41,40 @@
 	background: salmon;
 	width: 25%;
 	border: solid white;
+	transform: rotate(5deg);
 }
 
 .column.one-sixth{
 	background: grey;
 	width: 16.66%;
 	border: solid white;
+	height: 400px
+	
 }
 .column.one-eighth{
 	background: teal;
 	width: 12.5%;
 	border: solid white;
+	height: 300px;
+	transform: rotate(45deg);
 }
+.column.two-ninths{
+	background: pink;
+	width: 22.22%;
+}
+.column.three-ninths{
+	background: brown;
+	width: 33.33%
+}
+.column.four-ninths{
+	background: teal;
+	width: 44.44%;
+}
+img {
+	margin: 0 auto;
+
+}
+
 
 
 
