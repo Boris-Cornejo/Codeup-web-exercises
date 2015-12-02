@@ -1,0 +1,42 @@
+.container {
+	background: tan;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+.row {
+	background: grey;
+    width: 100%;
+
+}
+
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+.column.one-half{
+	background: blue;
+	width: 50%;
+    
+}
+.column.one-fourth{
+	background: green;
+	width: 25%;
+}
+
+.column.one-third{
+	background: red;
+	width: 33.33%;
+}
+
+/*.column.one-third {
+	background: green;
+    width: 33.33%;
+}
+.column.one-half {
+	background: brown;
+    width: 50%;
+}*/
