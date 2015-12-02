@@ -5,8 +5,9 @@
     max-width: 1200px;
 }
 .row {
-	background: grey;
+	background: transparent;
     width: 100%;
+
 
 }
 
@@ -20,17 +21,48 @@
 .column.one-half{
 	background: blue;
 	width: 50%;
+	height: 50px;
+	padding: 25px;
+	margin: 25px;
+	border: dotted;
     
 }
+
+
+
+.column.one-third{
+	background: black;
+	width: 33.33%;
+	padding: 25px;
+	margin: 25px;
+	border: dotted white;
+
+}
+
 .column.one-fourth{
 	background: green;
 	width: 25%;
+	padding: 25px;
+	margin: 25px;
+	border: dotted;
 }
 
-.column.one-third{
-	background: red;
-	width: 33.33%;
+.column.one-sixth{
+	background: gold;
+	width: 16.66%;
+	padding: 25px;
+	margin: 25px;
+	border: dotted;
 }
+
+.column.one-eighth{
+	background: pink;
+	width: 12.5%;
+	padding: 25px;
+	margin: 25px;
+	border: dotted;
+}
+
 
 /*.column.one-third {
 	background: green;
