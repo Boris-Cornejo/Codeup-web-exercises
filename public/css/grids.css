@@ -1,4 +1,4 @@
-
+/*-----Cointainer/Default settings-----*/
 *{
 	box-sizing: border-box;
 }
@@ -17,6 +17,7 @@
     display: table;
     clear: both;
 }
+/*----columns 1/2-1/8----*/
 .column {
     float: left;
     padding: 10px;
@@ -26,7 +27,7 @@
     width: 50%;
     border: solid white;
     height: 125px;
-    transform: rotate(-5deg);
+    transform: rotate(-55deg);
 }
 .column.one-third {
 	background: red;
@@ -58,6 +59,8 @@
 	height: 300px;
 	transform: rotate(45deg);
 }
+/*----Multi Class Row----*/
+
 .column.two-ninths{
 	background: pink;
 	width: 22.22%;
