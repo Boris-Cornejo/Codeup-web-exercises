@@ -1,0 +1,134 @@
+/*-----Cointainer/Default settings-----*/
+*{
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2000px;
+}
+
+.row {
+    width:100%;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    display: inline-block;
+    padding: 10px;
+    min-height: 100px;
+    /*box-shadow: 15px 15px 10px #888888;*/
+    box-shadow: inset 10px 10px 15px #000000, 
+    inset -10px -10px 15px silver, inset 15px 15px 20px #000000, 
+    inset -15px -15px 20px gold, inset 20px 20px 25px #000000, 
+    inset -20px -20px 25px gold,;
+}
+
+@media screen and (max-width: 550px){
+    .column.red{
+        background: red;
+        width: 80%;
+        margin: 5%;
+        
+    }
+
+    .column.blue{
+        background: blue;
+        width: 80%;
+        margin: 5%;
+       
+
+    }
+
+    .column.green{
+        background: green;
+        width: 80%;
+        margin: 5%;
+
+    }
+
+    .column.purple{
+        background: purple;
+        width: 80%;
+        margin: 5%;
+    }
+
+    .column.gold{
+        background: gold;
+        width: 80%;
+        margin: 5%;
+    }
+}
+@media screen and (min-width: 550px){
+    .column.red{
+        background: red;
+        width: 30%;
+        margin: 5%;
+    }
+
+    .column.blue{
+        background: blue;
+        width: 30%;
+        margin: 5%;
+    }
+
+    .column.green{
+        background: green;
+        width: 30%;
+        margin: 5%;
+    }
+
+    .column.purple{
+        background: purple;
+        width: 30%;
+        margin: 5%;
+    }
+
+    .column.gold{
+        background: gold;
+        width: 30%;
+        margin: 5%;
+    }
+}
+@media screen and (min-width: 800px){
+    .column.red{
+        background: red;
+        width: 25%;
+        margin: 5%;
+    }
+
+    .column.blue{
+        background: blue;
+        width: 25%;
+        margin: 5%;
+    }
+
+    .column.green{
+        background: green;
+        width: 25%;
+        margin: 5%;
+    }
+
+    .column.purple{
+        background: purple;
+        width: 25%;
+        margin: 5%;
+    }
+
+    .column.gold{
+        background: gold;
+        width: 25%;
+        margin: 5%;
+    }
+}
+
+
+
+
+
