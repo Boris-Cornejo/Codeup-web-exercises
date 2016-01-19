@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iterating Arrays</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+
+	<script>
+
+		//array with four names
+		var names = ["Yesenia", "Marcella", "Alessandro", "Valentinna"];
+		//number of items in the array
+		console.log("there are " + names.length + " names in the array.");
+		//log each individual name
+		console.log("The first name in the array is: " + names[0]);
+		console.log("The first name in the array is: " + names[1]);
+		console.log("The first name in the array is: " + names[2]);
+		console.log("The first name in the array is: " + names[3]);*/
+
+		//declare and initialize array with four names
+		var names = ["Yesenia", "Marcella", "Alessandro", "Valentinna"];
+		//for loop through the array and log the values
+		for (var i = 0; i < names.length; i++) {
+   			console.log('The name at index ' + i + ' is: ' + names[i]);
+		}
+
+		//declare and initialize array with four names
+		var names = ["Yesenia", "Marcella", "Alessandro", "Valentinna"];
+		//for each loop through the array and log the values
+		names.forEach(function (element, index,array) {
+    	// element is the shape name
+    	// index is the iterator
+    	// array is the shapes array itself
+    	console.log("The name at index " + index + " is: " + element);
+		});
+
+
+		var shapes = ["square", "rectangle", "circle", "triangle"];
+		//loopp through the array and log the values
+		for (var i = 0; i < shapes.length; i++) {
+   			console.log('The shape at index ' + i + ' is: ' + shapes[i]);
+		}
+
+		// declare and initialize array
+		var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+		// loop through the array and log the values
+		shapes.forEach(function (element, index, array) {
+    	// element is the shape name
+    	// index is the iterator
+    	// array is the shapes array itself
+    	console.log('The shape at index ' + index + ' is: ' + element);
+		});
+
+		//use random colors
+		var colors = ["red", "blue", "green", "yellow"];
+		var rand = Math.floor(Math.random() * 10);
+		console.log(rand);
+
+		if(rand <= colors.length + 1) {
+			console.log(colors[rand]);
+		} else {
+			console.log("That number is not in the array");
+		}
+
+	</script>
+	
+</body>
+</html>
