@@ -1,0 +1,37 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects Intro</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+
+	<script>
+		// todo:
+		// Create person object with firstName and lastName properties (set to your first and last name).
+		// var person = todo;
+
+		// todo:
+		// Add a say hello method to the person object that alerts hello using the firstName and lastName properties.
+
+		// Say hello from the person object.
+		// person.sayHello();
+		var person = {};
+		person.FirstName = "Boris";
+		person.LastName = "Cornejo";
+		// create a logMakeModel method on the car object
+		person.sayHello = function () {
+    	alert(this.FirstName + ' ' + this.LastName + " says hello");
+		};
+
+		// log the make/model
+		person.sayHello();
+
+	</script>
+	
+</body>
+</html>
