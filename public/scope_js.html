@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+
+	<script>
+	
+// todo:
+// Create a function called 'sayHello' that takes a parameter 'name'.
+// When called, the function should log a message that says hello from the passed in name.
+
+// todo: Call the function 'sayHello' passing the variable 'myNameIs' as a parameter.
+
+// do not worry about the details of this line
+// just know that it generates a random number between 1 and 100
+
+
+// todo:
+// Create a function called 'isOdd' that takes a number as a parameter.
+// The function should use the ternary operator to log a message.
+// The log should tell the number passed in and whether it is odd or not.
+
+// todo: Call the function 'isOdd' passing the variable 'random' as a parameter.
+
+
+(function () {
+	var myNameIs = 'Bob'; 
+
+	function sayHello(name) {
+    return ("hello " + myNameIs);
+	}
+
+	console.log(sayHello(myNameIs));
+
+})();
+(function () {
+
+	var random = Math.floor((Math.random()*100)+1);
+	function isOdd(number){
+		var random = number % 2;
+			(random === 0) ? console.log("even"): console.log("odd");
+		return number;
+
+	}
+	console.log(isOdd(random));
+
+	
+})();
+
+	
+		
+
+	</script>
+	
+</body>
+</html>
