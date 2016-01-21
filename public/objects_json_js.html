@@ -1,0 +1,67 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects Intro</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+
+	<script>
+		// todo:
+		// Create an array of objects that represent books.
+		// Each book should have a title and an author.
+		// The book author should be an object with a firstName and lastName.
+		// Be creative and add at least 5 books to the array
+		// var books = [todo];
+
+		var books = {"results":[
+		{
+			"Book" : "1",
+			"Title" : "Don Quijote",
+			"Author" : "Miguel De Cervantez",
+		},
+		{
+			"Book" : "2",
+			"Title" : "Go Set A Watchmen",
+			"Author" : "Harper Lee",
+		},
+		{
+			"Book" : "3",
+			"Title" : "To Kill A Mockingbird",
+			"Author" : "Harper Lee",
+		},
+		{
+			"Book" : "4",
+			"Title" : "Oliver Twist",
+			"Author" : "Chales Dickens",
+		},
+		{
+			"Book" : "5",
+			"Title" : "The Rime of the Ancient Mariner",
+			"Author" : "Samuel T. Coleridge",
+		}]};
+
+		// log out the books array
+		console.log(books);
+
+		// todo:
+		// Loop through the array of books using .forEach and print out the specified information about each one.
+		// start loop here
+		
+		for (var i = 0; i < books.results.length; i++) {    
+    	    console.log(books.results[i].Book);
+    	    console.log(books.results[i].Title);
+    	    console.log(books.results[i].Author);
+    	    console.log("---");
+			// end loop here
+		}
+		
+		
+	</script>
+	
+</body>
+</html>
