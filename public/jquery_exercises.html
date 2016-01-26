@@ -11,15 +11,15 @@
 <body>
 	<h1>Best Coffees</h1>
 
-	<ul id="coffees">
+	<ul class="codeup">
 		<li>Kona</li>
 		<li>Blue Mountain</li>
 		<li>Supremo</li>
 	</ul>
 
-	<div id="article">
+	<div id="codeup">
 		<h1>History of Coffee</h1>
-		<p id="history">
+		<p class="codeup">
 			The history of coffee goes at least as far back as the 10th century, with a number of reports and legends surrounding its first use. The native (undomesticated) origin of coffee is thought to have been Ethiopia. The earliest substantiated evidence of either coffee drinking or knowledge of the coffee tree is from the 15th century, in the Sufi monasteries of Yemen.[1] By the 16th century, it had reached the rest of the Middle East, Persia, Turkey, Horn of Africa, and northern Africa. Coffee then spread to the Balkans, Italy and to the rest of Europe, to Indonesia and then to America.[
 		</p>
 	</div>
@@ -34,8 +34,10 @@
 	$(document).ready(function(){
 		alert("The DOM has finished loading");
 
-		var contents = $("#history");
-    		alert(contents.html());
+		var contents = $(".codeup");
+		contents.css("background-color", "yellow");
+		contents.css("border", "1px solid red");
+    		
 
 
 
