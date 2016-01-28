@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery FAQ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
+	<style type="text/css">
+		.invisible{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<p>
+		<h1>Yellowstone Park FAQs</h1>
+		<dl>
+		  <dt>How did Yellowstone get its name?</dt>
+		  <dd class="invisible">Yellowstone National Park is named after the Yellowstone River, the major river running through the park.</dd>
+		  <dt>Is Yellowstone the largest national park?</dt>
+		  <dd class="invisible">No. More than half of Alaska's national park units are larger, including Wrangell–St. Elias National Park and Preserve, which is the largest unit (13 million acres) in the National Park System.</dd>
+		  <dt>Is Yellowstone the most visited national park?</dt>
+		  <dd class="invisible">Yellowstone is in the top five national parks for number of recreational visitors.</dd>
+		  <dt>What is the difference between a national park and a national forest?</dt>
+		  <dd class="invisible">National parks are administered by the Department of the Interior and national forests by the Department of Agriculture.</dd>
+		  <dt>Can we swim in rivers and lakes?</dt>
+		  <dd class="invisible">Swimming is not recommended, and is occasionally prohibited, because most lakes and streams are cold.</dd>
+		  <dt>Why is Yellowstone called a biosphere reserve and a world heritage site?</dt>
+		  <dd class="invisible">The United Nations designated Yellowstone National Park as a biosphere reserve and a world heritage site in recognition of the worldwide significance of its natural and cultural resources.</dd>
+		  <dt>What is the highest peak in the park?</dt>
+		  <dd class="invisible">Eagle Peak in the southeastern part of Yellowstone is the highest at 11,358 feet.</dd>
+		  <dt>How many rangers work in Yellowstone?</dt>
+		  <dd class="invisible">Approximately 780 people work for the park during the peak summer season.</dd>
+		  <dt>How did Mt. Washburn form?</dt>
+		  <dd class="invisible">t is a remnant of an extinct volcano from the Absaroka Volcanics of about 50 million years ago.</dd>
+		  <dt>Are there Wolves?</dt>
+		  <dd class="invisible">Wolves were reintroduced in 1995 and 1996 thrived and there are now over 300 of their descendents living in the Greater Yellowstone Area.</dd>
+		</dl>
+	</p>		
+	<a id="toggle" href="#">Click here!</a>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script>
+
+	
+
+	$(document).ready(function(){
+		$("#toggle").click(function(event){
+		event.preventDefault();
+		$("dd").toggleClass("invisible");
+
+	});
+	
+
+	});
+	</script>
+	
+</body>
+</html>
