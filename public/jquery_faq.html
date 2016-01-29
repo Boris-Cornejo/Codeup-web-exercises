@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>	
 	<style type="text/css">
+
 		.invisible{
 			display: none;
 		}
@@ -46,15 +47,13 @@
 
 	<script>
 
-	
-
 	$(document).ready(function(){
-		$("#toggle").click(function(event){
-		event.preventDefault();
-		$("dd").toggleClass("invisible");
 
+		$("#toggle").click(function(event){
+			event.preventDefault();
+			
+			$("dd").toggleClass("invisible");
 	});
-	
 
 	});
 	</script>
