@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Map Ajax</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+    body {
+        background-color: #ABDCFD;
+    }
+    .inputs {
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    #each-day {
+        margin-left: 25px;
+    }
+    #day-condition {
+        border: 1px solid black;
+        display: inline-block;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        text-align: center;
+        background-color: #F2F2F2;
+    }
+    .temp-text {
+        font-size: 25px;
+    }
+    #map-canvas {
+        width: 80%;
+        height: 481px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="inputs">
+        <h1>Weather Application</h1>
+        <h2>San Antonio, TX</h2>
+        <input type="text" id="lat" name="lat" placeholder="Latitude">
+        <input type="text" id="long" name="long" placeholder="Longitude">
+        <button id="find">Submit</button>
+    </div>
+    
+    <!-- Weather AJAX API Request -->
+    <div id="each-day">
+        <!-- appended in here -->
+    </div>
+
+    <!-- div holds the map image -->
+    <div id="map-canvas"></div>
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Google Maps API Key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrYfSlZsdgFFUvDkAiqJB4bmx5_fsgspY">
+</script>
+<script>
+"use strict";
+$(document).ready(function() {
+
+    /*
+        Weather API
+    */
+    var currentLat = 29.423017;
+    var currentLong = -98.48527;
+
+
+    $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+        "APPID": "399506ffe0d07ea9e1c7c69af4a51bb3",
+        "lat": currentLat,
+        "lon": currentLong,
+        "cnt": "3",
+        "units": "imperial"
+    })
+    .done(function(data) {
+        // console.log(data);
+        data.list.forEach(function(dayData) {
+
+            // Goes inside img src
+            var icon = dayData.weather[0].icon;
+            
+            $("#each-day").append("<div id='day-condition'><p class='temp-text'>" + dayData.temp.day + "&deg;</p>" + "<img src='http://openweathermap.org/img/w/" + icon + ".png'>" + "<p><strong>Clouds:</strong> " + dayData.weather[0].description + "</p><p><strong>Humidity:</strong> " + dayData.humidity + "</p><p><strong>Wind:</strong> " + dayData.speed + "</p><p><strong>Pressure:</strong> " + dayData.pressure + "</p></div>");
+        
+        });
+    });
+
+    /*
+        Google Maps API
+    */
+    // Set our map options
+    var mapOptions = {
+        // Set the zoom level
+        zoom: 6,
+    // This sets the center of the map at our location
+          center: {
+            lat: currentLat,
+            lng: currentLong
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    // Render the map
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+      // Init geocoder object
+      var geocoder = new google.maps.Geocoder();
+      var address = "San Antonio, TX";
+      
+      // Geocode our address
+      geocoder.geocode({ "address": address }, function(results, status) {
+        
+        // Check for a successful result
+          if (status == google.maps.GeocoderStatus.OK) {
+              // Recenter the map over the address
+              map.setCenter(results[0].geometry.location);
+              // Add the marker to our existing map
+            var marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                animation: google.maps.Animation.DROP,
+                map: map
+            });
+        } else {
+            // Show an error message with the status if our request fails
+                  alert("Geocoding was not successful - STATUS: " + status);
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
