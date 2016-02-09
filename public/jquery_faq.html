@@ -66,23 +66,30 @@
 	    </ul>
 	</p>
 
-	<a id="toggle" href="#">Click here!</a>
+	<a id="one" href="#">Click here!</a>
+	<a id="two" href="#">Click here!</a>
+	<a id="three" href="#">Click here!</a>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 	<script>
 
 	$(document).ready(function(){
 
-		$("#toggle").click(function(event){
-			event.preventDefault();
-
-			$("dd").toggleClass("invisible");
+		$("#one").click(function(){
+			$("dd").fadeIn();
+	});
+		$("#two").click(function(){
+			$("dd").fadeOut();
 	});
 		$("ul").click(function(){
 			$(this).children("li").first().css('font-weight', 'bold');
 	});
 		$("ul").click(function(){
-			$(this).hide();
+			$(this).fadeOut();
+
+	});
+		$("h3").click(function(){
+			$("ul").fadeIn();
 
 	});
 
